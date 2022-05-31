@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>EMI Calculator</title>
+    <!-- Bootstrap code -->
+    <!-- CSS only -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="js/script.js"></script>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <table class="calculator-table" cellspacing="0">
+        <tbody>
+          <th colspan="2" class="emi-head">EMI Calculator</th>
+          <div class="first-container">
+            <tr>
+              <td>
+                <span class="result">Loan Amount in Rs :</span>
+              </td>
+              <td>
+                <input
+                  type="number"
+                  name="loan"
+                  id="amount"
+                  min="10000"
+                  max="20000"
+                  inputmode="numeric"
+                  class="your_class"
+                  onkeypress="return event.keyCode === 8 || event.charCode >= 48 && event.charCode <= 57"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span class="result">Interest Rate in % p.a. :</span>
+              </td>
+              <td>
+                <input
+                  type="number"
+                  name="interest"
+                  id="rate"
+                  min="2"
+                  max="100"
+                  inputmode="numeric"
+                  onkeypress="return event.keyCode === 8 || event.charCode >= 48 && event.charCode <= 57"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span class="result">Period (in months) :</span>
+              </td>
+              <td>
+                <input
+                  type="number"
+                  inputmode="numeric"
+                  name="period"
+                  id="months"
+                  min="1"
+                  max="12"
+                  onkeypress="return event.keyCode === 8 || event.charCode >= 48 && event.charCode <= 57"
+                />
+              </td>
+            </tr>
+          </div>
+        </tbody>
+      </table>
+      <button onclick="emiCalculation()" class="btn">Calculate</button>
+      <div result-container>
+        <table class="result-table" cellspacing="0">
+          <tr>
+            <td><span class="result">EMI</span></td>
+            <td><span class="result">Total Interest</span></td>
+            <td><span class="result">Monthly Interest</span></td>
+          </tr>
+          <tr>
+            <td>
+              <input
+                type="text"
+                readonly="readonly"
+                id="result1"
+                value=""
+                name="result1"
+              />
+            </td>
+            <td>
+              <input
+                type="text"
+                readonly="readonly"
+                id="result2"
+                value=""
+                name="result2"
+              />
+            </td>
+            <td>
+              <input
+                type="text"
+                readonly="readonly"
+                id="result3"
+                value=""
+                name="result3"
+              />
+            </td>
+          </tr>
+        </table>
+  
+      </div>
+          </div>
+  </body>
+</html>

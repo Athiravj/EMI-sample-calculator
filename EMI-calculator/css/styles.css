@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+}
+
+.calculator-table {
+  border: solid 2px white;
+  background-color: #0170bd;
+  width: 40%;
+  height: 200px;
+}
+
+.result-table {
+  border: white;
+  border: solid 2px white;
+  background-color: #0170bd;
+  width: 40%;
+  height: 100px;
+  padding: 20px;
+}
+
+tbody {
+  color: white;
+}
+
+.emi-head {
+  width: 60%;
+  border: #e32e24;
+  font-size: 16px;
+  font-weight: 400;
+  text-align: center;
+  background-color: #e32e24;
+}
+
+.btn {
+  padding: 6px 20px;
+  color: white;
+  background-color: #e32e24;
+  border: white;
+  margin: 20px;
+  cursor: pointer;
+}
+
+input {
+  width: 150px;
+  border-radius: 3px;
+  border: white;
+  height: 20px;
+  padding-left: 5px;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  margin: 0;
+}
+
+.result {
+  padding-left: 20px;
+}
+
